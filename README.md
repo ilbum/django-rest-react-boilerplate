@@ -32,10 +32,9 @@ pip install django-rest-knox
 `python manage.py rename <yourprojectname> <newprojectname>`
 
 #### Checklist
-* Secret Key settings:
-    * SECRET_KEY:
-        * changed?
-        * hidden?
+* SECRET_KEY:
+    * changed?
+    * hidden?
 * TEMPLATES:
     * Default:
         * 'DIRS': [],
