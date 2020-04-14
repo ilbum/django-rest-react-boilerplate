@@ -30,7 +30,8 @@ pip install django-rest-knox
 2. Install packages\
 `pip install -r requirements.txt`
 3. Optional: rename project\
-`python manage.py rename <yourprojectname> <newprojectname>`
+Rename folder: `'project_root' '<new_project>'`\
+Find and replace: `'project_root' '<new_project>'`
 
 #### Checklist
 * SECRET_KEY:
