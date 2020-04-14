@@ -43,7 +43,7 @@ ALLOWED_HOSTS = [
 
 INSTALLED_APPS = [
     # my apps
-    'base',
+    # 'base',
     # 'profiles',
 
     # django defaults

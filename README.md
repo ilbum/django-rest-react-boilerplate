@@ -8,7 +8,8 @@ Use this to create new django rest and react projects.
 
 ## Pending Tasks
 
-* Install react
+* setup base and profiles app
+* install react
 
 ## Getting Started
 
