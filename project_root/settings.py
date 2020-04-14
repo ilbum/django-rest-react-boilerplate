@@ -1,17 +1,6 @@
 """
 INFORMATION:
     settings file created by django==3.0.3
-
-CHECKLIST:
-    SECRET_KEY:
-        changed: False
-        hidden: False
-    TEMPLATES:
-        Currently:
-            'DIRS': [],
-        Options:
-                'DIRS: [BASE_DIR + '/templates/'],
-                'DIRS': ['../../static_root/project_root/templates/'],
 """
 
 import os
