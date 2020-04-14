@@ -20,8 +20,10 @@ import os
 # Misc settings
 # ---------------------------------------------------------
 
-BASE_DIR = os.path.dirname(
-    os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# change to below once settings module folder is made
+# BASE_DIR = os.path.dirname(
+#     os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '$y%g_8(sass5-11zd4%!ys2q1z9_sn-3_a%b^-pq8=b+9ew%4y'
