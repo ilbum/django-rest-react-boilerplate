@@ -48,14 +48,9 @@ INSTALLED_APPS = [
 
     # third party
     'rest_framework',
+    'corsheaders',
     # 'django_s3_storage',
     # 'sslserver',
-
-    # # allauth
-    # 'allauth',
-    # 'allauth.account',
-    # 'allauth.socialaccount',
-    # 'allauth.socialaccount.providers.facebook',
 
     # django forms - must be last
     'django.forms',
@@ -64,6 +59,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -148,11 +144,36 @@ USE_TZ = True
 
 
 # ---------------------------------------------------------
+# django-rest-framework
+# https://www.django-rest-framework.org/
+# ---------------------------------------------------------
+
+# Rest Settings ...
+
+
+# ---------------------------------------------------------
+# django-cors-headers
+# https://github.com/adamchainz/django-cors-headers
+# ---------------------------------------------------------
+
+# for connection to react default server
+CORS_ORIGIN_ALLOW_ALL = True
+CORS_ALLOW_CREDENTIALS = True
+CORS_ORIGIN_WHITELIST = [
+    'http://localhost:3000',
+]
+CORS_ORIGIN_REGEX_WHITELIST = [
+    'http://localhost:3000',
+]
+
+
+# ---------------------------------------------------------
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 # ---------------------------------------------------------
 
 STATIC_URL = '/static/'
+
 
 # ---------------------------------------------------------
 # Amazon Static

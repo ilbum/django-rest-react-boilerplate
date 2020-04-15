@@ -18,10 +18,11 @@ Use this to create new django rest and react projects.
 ```
 Python 3.6.8
 
-# pip log
+# pip install commands log
 pip install django==3.0.3
 pip install django-rest-framework
 pip install django-rest-knox
+pip install django-cors-headers
 ```
 
 ### **Installing**
@@ -35,8 +36,8 @@ Find and replace: `'project_root' '<new_project>'`
 
 #### Checklist
 * SECRET_KEY:
-    * changed?
-    * hidden?
+    * changed? No
+    * hidden? No
 * TEMPLATES:
     * Default:
         * 'DIRS': [],
