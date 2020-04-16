@@ -43,12 +43,14 @@ Find and replace: `'project_root' '<new_project>'`
         * 'DIRS': [],
     * Options:
         * 'DIRS: [BASE_DIR + '/templates/'],
-        * 'DIRS': ['../../static_root/project_root/templates/'],
+        * 'DIRS': ['../static_root/project_root/templates/'],
+            * if settings folder, than move up one more directory '../../static_root/project_root/templates/'
 * STATICFILES_DIRS:
     * Default:
         * None
     * Options:
-        * STATICFILES_DIRS = [os.path.join('../../static_root/project_root/static'),]
+        * STATICFILES_DIRS = [os.path.join('../static_root/project_root/static'),]
+            * if settings folder, than move up one more directory '../../static_root/project_root/static/'
 
 ## Accessing the user models
 

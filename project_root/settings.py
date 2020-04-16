@@ -19,6 +19,7 @@ SECRET_KEY = '$y%g_8(sass5-11zd4%!ys2q1z9_sn-3_a%b^-pq8=b+9ew%4y'
 
 LOGIN_URL = '/login/'
 LOGIN_REDIRECT_URL = '/'
+SITE_ID = 1
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
